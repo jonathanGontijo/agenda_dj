@@ -9,3 +9,9 @@ class ContactAdmin(admin.ModelAdmin):
     ordering = 'id',
     search_fields = 'first_name',
     #list_filter = 'created_date',
+
+@admin.register(models.Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = 'name',
+    ordering = 'id',
+    
